@@ -1,0 +1,8 @@
+%h1 New Todo
+
+- form_for @to_do do |f|
+  = render :partial => "form", :locals => {:f => f}
+
+  %p
+    = f.submit "Save"
+    = link_to "Cancel", to_dos_path
