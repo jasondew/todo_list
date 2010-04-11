@@ -1,0 +1,10 @@
+config/database.yml
+public/stylesheets/application.css
+db/*.sqlite3
+coverage/*
+log/*.log
+tmp/**/*
+*.swp
+*.patch
+.DS_Store
+.sass-cache
