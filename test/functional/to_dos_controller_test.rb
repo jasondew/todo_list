@@ -9,6 +9,7 @@ class ToDosControllerTest < ActionController::TestCase
 
       should_respond_with :success
       should_assign_to :to_dos
+      should_render_template "index"
     end
 
     context "on GET of show" do
@@ -16,6 +17,7 @@ class ToDosControllerTest < ActionController::TestCase
 
       should_respond_with :success
       should_assign_to :to_do
+      should_render_template "show"
     end
 
     context "on GET of new" do
